@@ -81,7 +81,7 @@ Before v0.14, React use `JSTransform.js` to translate `<script type="text/jsx">`
 ## Demo02: Use JavaScript in JSX
 
 [demo](http://ruanyf.github.io/react-demos/demo02/) / [source](https://github.com/ruanyf/react-demos/blob/master/demo02/index.html)
-
+<!-- brackets 括号; (价格、年龄、收入等的)组级，等级 -->
 You could also use JavaScript in JSX. It takes angle brackets (&lt;) as the beginning of HTML syntax, and curly brackets (`{`) as the beginning of JavaScript syntax.
 
 ```js

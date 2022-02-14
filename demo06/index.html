@@ -11,11 +11,27 @@
     <div id="example"></div>
     <script type="text/babel">
 
-      var data = 123;
-
+      var data 
+      // var data = 123;
+      
+      // 如果没有使用ts，PropTypes 可以限制字符类型 
+      // 1.指定基本数据类型
+      //       MyComponent.propTypes = {
+      //     // 你可以将属性声明为以下 JS 原生类型
+      //     optionalArray: PropTypes.array,
+      //     optionalBool: PropTypes.bool,
+      //     optionalFunc: PropTypes.func,
+      //     optionalNumber: PropTypes.number,
+      //     optionalObject: PropTypes.object,
+      //     optionalString: PropTypes.string,
+      //     optionalSymbol: PropTypes.symbol,
+      // }
       class MyTitle extends React.Component {
         static propTypes = {
           title: PropTypes.string.isRequired,
+        }
+        static defaultProps = {
+          title: 'defaultTitle'
         }
         render() {
           return <h1> {this.props.title} </h1>;
